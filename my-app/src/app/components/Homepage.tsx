@@ -80,119 +80,124 @@ const Homepage: React.FC = () => {
 
 
       {/* NEXT PAGE SECTION */}
-     <section className="bg-white text-black py-16">
-      <div className="mx-auto max-w-6xl px-4 md:px-0">
-        <h2 className="mb-10 text-center text-lg font-semibold tracking-[0.25em] text-gray-700">
-          OUR MISSION IS TO{" "}
-          <span className="text-pink-500">BRIDGE POTENTIAL</span> AND{" "}
-          <span className="text-pink-500">OPPORTUNITY</span> THROUGH
-          <br />
-          <span className="mt-1 inline-block">
-            TAILORED TRAINING PROGRAMS FOR ALL AGES.
-          </span>
-        </h2>
+    <section className="bg-white text-black py-16">
+  <div className="mx-auto max-w-6xl px-4 md:px-0">
+    <h2 className="mb-10 text-center text-lg font-semibold tracking-[0.25em] text-gray-700">
+      OUR MISSION IS TO{" "}
+      <span className="text-pink-500">BRIDGE POTENTIAL</span> AND{" "}
+      <span className="text-pink-500">OPPORTUNITY</span> THROUGH
+      <br />
+      <span className="mt-1 inline-block">
+        TAILORED TRAINING PROGRAMS FOR ALL AGES.
+      </span>
+    </h2>
 
     {/* ABOUT SECTION */}
+    <div className="border border-pink-500/40 bg-white p-8 md:p-10 mb-14">
+      <div className="grid gap-10 md:grid-cols-2 md:items-center">
+        {/* TEXT LEFT */}
+        <div className="space-y-6 text-black">
+          <h3 className="text-2xl font-semibold">
+            <span className="hidden md:inline">
+              About <span className="text-pink-500">Ngo</span>
+            </span>
+            <span className="inline md:hidden">
+              About <span className="text-pink-500">Ngo</span> Foundation
+            </span>
+          </h3>
 
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <span className="h-4 w-4 bg-pink-500" />
+              <p className="text-base font-semibold">Who we are-</p>
+            </div>
 
-<div className="border border-pink-500/40 bg-white p-8 md:p-10 mb-14">
-  <div className="grid gap-10 md:grid-cols-2 md:items-center">
-    {/* TEXT LEFT */}
-    <div className="space-y-6 text-black">
-      <h3 className="text-2xl font-semibold">
-        About <span className="text-pink-500">Ngo</span>
-      </h3>
-
-      <div className="space-y-4">
-        <div className="flex items-center gap-3">
-          <span className="h-4 w-4 bg-pink-500" />
-          <p className="text-base font-semibold">Who we are-</p>
-        </div>
-
-        <p className="text-sm leading-relaxed">
-          Founded in [Year], our organization has been at the forefront of
-          workforce development, focusing on equipping underprivileged youth
-          and adults with the skills they need to succeed. From basic
-          education to advanced vocational training, we provide a range of
-          programs designed to meet the unique needs of our community.
-        </p>
-      </div>
-    </div>
-
-    {/* IMAGE RIGHT */}
-    <div className="relative flex justify-center md:justify-end">
-      <div className="relative h-64 w-full max-w-sm">
-        <div className="absolute -left-4 -top-6 h-10 w-10 rounded-full bg-pink-300" />
-        <div className="absolute -right-5 -top-6 h-10 w-15 z-1">
-           <Image
-        src="/gallery/lines.png"
-        alt="image"
-        fill
-        className="object-cover"
-        /> </div>
-        <div className="absolute -right-6 -bottom-5 h-20 w-20" >
-        <Image
-        src="/gallery/Group 919.png"
-        alt="image"
-        fill
-        className="object-cover"
-        /> </div>
-        <div className="relative h-full w-full overflow-hidden bg-black rounded-md">
-          <Image
-            src="/gallery/img2.jpg"
-            alt="Mentor working on laptop"
-            fill
-            className="object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-        {/* VISION & MISSION SECTION */}
-        <div className="grid md:grid-cols-2 gap-10 md:items-stretch">
-          {/* IMAGE LEFT */}
-          <div className="relative h-72 w-full overflow-hidden rounded md:h-80">
-            <Image
-              src="/gallery/img4.jpg"
-              alt="People collaborating"
-              fill
-              className="object-cover"
-            />
+            <p className="text-sm leading-relaxed">
+              Founded in [Year], our organization has been at the forefront of
+              workforce development, focusing on equipping underprivileged youth
+              and adults with the skills they need to succeed. From basic
+              education to advanced vocational training, we provide a range of
+              programs designed to meet the unique needs of our community.
+            </p>
           </div>
+        </div>
 
-          {/* TEXT RIGHT */}
-          <div className="border border-pink-500/40 p-8 md:p-10 text-white">
-            <div className="space-y-6">
-              <div className="flex items-center gap-3">
-                <span className="h-4 w-4 bg-pink-500" />
-                <p className="text-base font-semibold text-black">
-                  Our Vision and mission
-                </p>
-              </div>
-
-              <p className="text-sm font-semibold text-black">
-                &quot;Unlocking Potential, Creating Opportunities.&quot;
-              </p>
-
-              <p className="text-sm leading-relaxed text-black">
-                Empowering underprivileged individuals with the skills and
-                support needed for meaningful employment, envisioning a world
-                where everyone can achieve their full potential through equal
-                opportunities.
-              </p>
-
-              <button className="mt-4 inline-flex items-center justify-center  bg-black px-6 py-3 text-sm font-semibold text-white hover:bg-pink-600">
-                Become Our Member
-                <span className="ml-2 text-lg">›</span>
-              </button>
+        {/* IMAGE RIGHT */}
+        <div className="relative flex justify-center md:justify-end">
+          <div className="relative h-64 w-full max-w-sm">
+            <div className="absolute -left-4 -top-6 h-10 w-10 rounded-full bg-pink-300" />
+            <div className="absolute -right-5 -top-6 h-10 w-15 z-1">
+              <Image
+                src="/gallery/lines.png"
+                alt="image"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute -right-6 -bottom-5 h-20 w-20">
+              <Image
+                src="/gallery/Group 919.png"
+                alt="image"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-full w-full overflow-hidden bg-black rounded-md">
+              <Image
+                src="/gallery/img2.jpg"
+                alt="Mentor working on laptop"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    {/* VISION & MISSION SECTION */}
+    <div className="grid md:grid-cols-2 gap-10 md:items-stretch">
+      {/* IMAGE LEFT – DESKTOP ONLY */}
+      <div className="relative h-72 w-full overflow-hidden rounded md:h-80 hidden md:block">
+        <Image
+          src="/gallery/img4.jpg"
+          alt="People collaborating"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      {/* TEXT RIGHT */}
+      <div className="border border-pink-500/40 p-8 md:p-10 text-white">
+        <div className="space-y-6">
+          <div className="flex items-center gap-3">
+            <span className="h-4 w-4 bg-pink-500" />
+            <p className="text-base font-semibold text-black">
+              Our Vision and mission
+            </p>
+          </div>
+
+          <p className="text-sm font-semibold text-black">
+            &quot;Unlocking Potential, Creating Opportunities.&quot;
+          </p>
+
+          <p className="text-sm leading-relaxed text-black">
+            Empowering underprivileged individuals with the skills and
+            support needed for meaningful employment, envisioning a world
+            where everyone can achieve their full potential through equal
+            opportunities.
+          </p>
+
+          <button className="mt-4 inline-flex items-center justify-center bg-black px-6 py-3 text-sm font-semibold text-white hover:bg-pink-600">
+            Become Our Member
+            <span className="ml-2 text-lg">›</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
  
         {/* THIRD PAGE SECTION */}
@@ -224,22 +229,22 @@ const Homepage: React.FC = () => {
 
           <div className="relative flex justify-center">
 
-            <div className="absolute -left-1 top-5 h-24 w-24 rounded-full bg-pink-300" />
-            <div className="absolute right-5 -top-1 h-24 w-24 ">
+            <div className="absolute -left-1 top-5 h-24 w-24 rounded-full bg-pink-300 hidden md:block" />
+            <div className="absolute right-5 -top-1 h-24 w-24 hidden md:block">
               <Image
                  src="/gallery/lines.png"   
                   alt="People collaborating on computers"
                   fill
                   className="object-cover"
               /> </div>
-                 <div className="absolute right-5 -bottom-10 h-30 w-20" >
+                 <div className="absolute right-5 -bottom-10 h-30 w-20 hidden md:block" >
         <Image
         src="/gallery/Group 919.png"
         alt="image"
         fill
         className="object-cover"
         /> </div>
-            <div className="relative h-64 w-full max-w-md overflow-hidden">
+            <div className="relative h-64 w-full max-w-md overflow-hidden hidden md:block">
             
               <div className="relative h-full w-full">
                 <Image
@@ -404,26 +409,33 @@ const Homepage: React.FC = () => {
 </section>
 
 
+
  {/* FOOTER SECTION  */}
 
 
 <footer className="mt-16 bg-[#111111] text-gray-200 rounded-t-[40px]">
   <div className="mx-auto max-w-6xl px-4 py-14 md:px-0">
 
-    <div className="grid gap-12 text-center md:text-left md:grid-cols-3 mb-10">
-      <h3 className="text-base font-semibold text-pink-500">Core Values</h3>
-      <h3 className="text-base font-semibold text-pink-500">Useful links</h3>
-      <h3 className="text-base font-semibold text-pink-500">Our contacts</h3>
+    {/* Logo */}
+    <div className="text-white mb-10 text-center md:text-left">
+      <span className="font-serif font-extrabold text-2xl italic ml-10">NGO</span>
+      <br />
+      <span className="text-3xl">Foundation</span>
     </div>
 
-    <div className="grid gap-12 md:grid-cols-3 text-sm text-gray-300 md:text-left text-center">
-
+    <div className="grid gap-12 text-center md:text-left md:grid-cols-3 text-sm text-gray-300">
+      
       <div className="space-y-8">
-        <p className="leading-relaxed">
-          At Charity 128, we prioritize transparency, integrity, and inclusivity.
-          These values guide our actions as we work tirelessly to bridge the gap
-          between those in need and those willing to help.
-        </p>
+        <div className="space-y-4">
+          <h3 className="text-base font-semibold text-pink-500">
+            Core Values
+          </h3>
+          <p className="leading-relaxed">
+            At Charity 128, we prioritize transparency, integrity, and inclusivity.
+            These values guide our actions as we work tirelessly to bridge the gap
+            between those in need and those willing to help.
+          </p>
+        </div>
 
         <div className="space-y-4">
           <h4 className="text-base font-semibold text-pink-500">
@@ -440,26 +452,37 @@ const Homepage: React.FC = () => {
         </div>
       </div>
 
-      <ul className="space-y-3">
-        <li><a href="#" className="hover:text-pink-400">Home</a></li>
-        <li><a href="#" className="hover:text-pink-400">Our Mission</a></li>
-        <li><a href="#" className="hover:text-pink-400">Why Choose Us</a></li>
-        <li><a href="#" className="hover:text-pink-400">Our Programs</a></li>
-        <li><a href="#" className="hover:text-pink-400">Membership</a></li>
-      </ul>
+      <div className="space-y-4">
+        <h3 className="text-base font-semibold text-pink-500">
+          Useful links
+        </h3>
+        <ul className="space-y-3">
+          <li><a href="#" className="hover:text-pink-400">Home</a></li>
+          <li><a href="#" className="hover:text-pink-400">Our Mission</a></li>
+          <li><a href="#" className="hover:text-pink-400">Why Choose Us</a></li>
+          <li><a href="#" className="hover:text-pink-400">Our Programs</a></li>
+          <li><a href="#" className="hover:text-pink-400">Membership</a></li>
+        </ul>
+      </div>
 
       <div className="space-y-6">
-        <div className="flex items-center justify-center md:justify-start gap-3">
-          <span className="text-pink-400 text-lg">📨</span>
-          <span>information@office.com</span>
-        </div>
-        <div className="flex items-center justify-center md:justify-start gap-3">
-          <span className="text-pink-400 text-lg">📞</span>
-          <span>+6329562949</span>
-        </div>
-        <div className="flex items-center justify-center md:justify-start gap-3">
-          <span className="text-pink-400 text-lg">🗺️</span>
-          <span>2307 Beverley, New York</span>
+        <h3 className="text-base font-semibold text-pink-500">
+          Our contacts
+        </h3>
+
+        <div className="space-y-4">
+          <div className="flex items-center justify-center md:justify-start gap-3">
+            <span className="text-pink-400 text-lg">📨</span>
+            <span>information@office.com</span>
+          </div>
+          <div className="flex items-center justify-center md:justify-start gap-3">
+            <span className="text-pink-400 text-lg">📞</span>
+            <span>+6329562949</span>
+          </div>
+          <div className="flex items-center justify-center md:justify-start gap-3">
+            <span className="text-pink-400 text-lg">🗺️</span>
+            <span>2307 Beverley, New York</span>
+          </div>
         </div>
 
         <div className="flex gap-4 justify-center md:justify-start pt-3">
@@ -478,6 +501,7 @@ const Homepage: React.FC = () => {
     </div>
   </div>
 </footer>
+
 
 
 
